@@ -27,7 +27,7 @@ Latest commit 307941f 2 days ago
  1 contributor
 88 lines (77 sloc)  2.68 KB
 
-name: python.h error newer image
+name: python.h error test
 
 on:
   push:
