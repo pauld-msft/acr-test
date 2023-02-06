@@ -26,12 +26,7 @@ jobs:
           - 3.10.9
           - 3.11.1 
         buildImageTag:
-          - github-actions-20220805.1
-          - github-actions-buster-20220805.1
-          - github-actions-bullseye-20220805.1
-          - github-actions-debian-stretch-20230130.1
-          - github-actions-debian-buster-20230130.1
-          - github-actions-debian-bullseye-20230130.1
+          - github-actions-debian-bullseye-20230120.4
         storageAccount:
           - "ORYX_SDK_STORAGE_BASE_URL=https://oryxsdkssandbox.blob.core.windows.net"
 
