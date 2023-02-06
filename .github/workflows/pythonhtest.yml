@@ -42,4 +42,4 @@ jobs:
           ref: pauld/test-pythonh  # partner requirements.txt
 
       - name: Build application - ${{ matrix.version }} - ${{ matrix.buildImageTag }}
-        run: docker run --rm -e ${{ matrix.storageAccount }} -v $(pwd)/tests/SampleApps/${{ matrix.app }}:/app mcr.microsoft.com/oryx/build:${{ matrix.buildImageTag }} oryx build /app --platform python --platform-version ${{ matrix.version }}
+        run: docker run --rm -v $(pwd)/tests/SampleApps/${{ matrix.app }}:/app mcr.microsoft.com/oryx/build:${{ matrix.buildImageTag }} oryx build /app --platform python --platform-version ${{ matrix.version }} --property ${{ matrix.storageAccount }}
